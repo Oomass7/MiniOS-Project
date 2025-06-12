@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiniOS Project</title>
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="shortcut icon" href="CAMBIAR" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <h1>MiniOS</h1>
+        <section class="menu">
+            <label for="app-select">Selecciona una aplicación:</label>
+            <select id="app-select" onchange="location = this.value;">  
+                <option value="apps/note.html" target="app-frame">Notas</option>
+                <option value="apps/homeworks.html" target="app-frame">Tareas</option>
+                <option value="apps/weather.html" target="app-frame">Clima</option>
+            </select>
+        </section>
+    </header>
+
+    <main>
+        <iframe name="app-frame" src="apps/note.html" frameborder="0"></iframe>
+    </main>
+</body>
+
+</html>
