@@ -11,7 +11,11 @@
 
 <body>
     <header>
+        <img src="./styles/apple_logo.png" class="apple_logo" alt="Apple Logo">
         <h1>MiniOS</h1>
+    </header>
+
+    <main>
         <section class="menu">
             <label for="app-select">Selecciona una aplicación:</label>
             <select id="app-select" onchange="location = this.value;">  
@@ -20,10 +24,9 @@
                 <option value="apps/weather.html" target="app-frame">Clima</option>
             </select>
         </section>
-    </header>
-
-    <main>
-        <iframe name="app-frame" src="apps/note.html" frameborder="0"></iframe>
+        <section>
+            <iframe name="app-frame" src="apps/note.html" frameborder="0"></iframe>
+        </section>
     </main>
 </body>
 
