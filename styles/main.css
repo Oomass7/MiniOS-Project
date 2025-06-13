@@ -44,3 +44,16 @@ main iframe {
     height: 80vh;
     border: none;
 }
+
+iframe {
+    display: none;
+}
+
+#app-note-check:checked~ #app-note, #app-homework-check:checked~ #app-homework, #app-weather-check:checked~ #app-weather {
+    display: block;
+    
+}
+
+
+
+
