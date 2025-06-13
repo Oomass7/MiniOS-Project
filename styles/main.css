@@ -34,8 +34,8 @@ h1 {
 }
 
 .menu {
-    display: flex;
-    align-items: center;
+    margin: 100px;
+    font-size: 100px        ;
 }
 
 .menu label {
@@ -75,6 +75,11 @@ iframe {
     transform: scale(1.5);
 }
 
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
 
 
 

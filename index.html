@@ -12,45 +12,24 @@
 <body>
     <header>
         <section class="header_container_one">
-            <img src="./styles/apple_logo.png" class="apple_logo" alt="Apple Logo">
+            <img src="./styles/media/apple_logo.png" class="apple_logo" alt="Apple Logo">
             <h1>MiniOS</h1>
             <label class="close_button">
-                <i class="fa-regular fa-circle-xmark"></i>
+                <i class="fa-solid fa-power-off"></i>
             </label>
         </section>
-        <img src="./styles/media/apple_logo.png" class="apple_logo" alt="Apple Logo">
-        <h1>MiniOS</h1>
     </header>
 
     <main>
         <section class="menu">
-            <label for="app-select">Selecciona una aplicación:</label>
-            <select id="app-select" onchange="location = this.value;">
-            <!-- <select id="app-select" onchange="location = this.value;">  
-                <option value="apps/note.html" target="app-frame">Notas</option>
-                <option value="apps/homeworks.html" target="app-frame">Tareas</option>
-                <option value="apps/weather.html" target="app-frame">Clima</option>
-            </select> -->
+            <label for="app-select"></label>
         </section>
-        <!-- <section>
-            <label for="app-note-check">Notas</label>
-            <label for="app-homework-check">Tareas</label>
-            <label for="app-weather-check">Clima</label>
-            <input id="app-note-check" name="app-notes" type="radio" value="asd">
-            <input id="app-homework-check" name="app-homeworks" type="radio" value="asd">
-            <input id="app-weather-check" name="app-weather" type="radio" value="asd">
-            <iframe id="app-note" name="app-notes" src="apps/note.html" frameborder="0"></iframe>
-            <iframe id="app-homework" name="app-homeworks" src="./apps/homeworks.html" frameborder="0"></iframe>
-            <iframe id="app-weather" name="app-weather" src="./apps/weather.html" frameborder="0"></iframe>
-        </section> -->
         <section>
-            <div>
+            <div class="icons">
                 <input type="radio" id="app-note-check" name="contact" value="email" hidden/>
                 <label for="app-note-check">Notas</label>
-
                 <input type="radio" id="app-homework-check" name="contact" value="phone" hidden/>
                 <label for="app-homework-check">Tareas</label>
-
                 <input type="radio" id="app-weather-check" name="contact" value="mail" hidden/>
                 <label for="app-weather-check">Clima</label>
                 <iframe id="app-note" name="app-notes" src="apps/note.html" frameborder="0"></iframe>
