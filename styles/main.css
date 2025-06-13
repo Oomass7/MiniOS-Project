@@ -48,6 +48,16 @@ main iframe {
     border: none;
 }
 
+iframe {
+    display: none;
+}
+
+#app-note-check:checked~ #app-note, #app-homework-check:checked~ #app-homework, #app-weather-check:checked~ #app-weather {
+    display: block;
+    
+}
+
+
 .close_button i {
     background-color: #000000;
     color: #00ffdc;
@@ -64,3 +74,7 @@ main iframe {
 .close_button:hover {
     transform: scale(1.5);
 }
+
+
+
+
