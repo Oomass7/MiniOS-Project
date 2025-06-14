@@ -24,22 +24,54 @@
         <section class="menu">
             <label for="app-select"></label>
         </section>
+
         <section>
-            <div class="icons">
-                <input type="radio" id="app-note-check" name="contact" value="email" hidden/>
-                <label for="app-note-check">Notas</label>
-                <input type="radio" id="app-homework-check" name="contact" value="phone" hidden/>
-                <label for="app-homework-check">Tareas</label>
-                <input type="radio" id="app-weather-check" name="contact" value="mail" hidden/>
-                <label for="app-weather-check">Clima</label>
+            <div class="window">
+                <div class="window-note-header">
+                    <label for="app-note-status"><i class="fa fa-close"></i></label>
+                    <label for="app-note-maximize"><i></i></label>
+                    <label for="app-note-minimize"><i></i></label>
+                </div>
+                <input type="checkbox" id="app-note-status" name="window-functions" hidden />
+                <input type="checkbox" id="app-note-maximize" name="window-functions" hidden />
+                <input type="checkbox" id="app-note-minimize" name="window-functions" hidden />
                 <iframe id="app-note" name="app-notes" src="apps/note.html" frameborder="0"></iframe>
+            </div>
+        </section>
+        <section>
+            <div class="window">
+                <div class="window-header"><label for=""><i></i></label><label for=""><i></i></label><label
+                        for=""><i></i></label></div>
+                <input type="checkbox" id="app-homework-status" name="window-functions" hidden />
                 <iframe id="app-homework" name="app-homeworks" src="./apps/homeworks.html" frameborder="0"></iframe>
+            </div>
+        </section>
+        <section>
+            <div class="window">
+                <div class="window-header"><label for=""><i></i></label><label for=""><i></i></label><label
+                        for=""><i></i></label></div>
+                <input type="checkbox" id="app-weather-status" name="window-functions" hidden />
                 <iframe id="app-weather" name="app-weather" src="./apps/weather.html" frameborder="0"></iframe>
             </div>
         </section>
 
-
     </main>
+    <footer>
+        <div class="icons">
+            <!-- <input type="radio" id="app-note-status" name="contact" value="email" hidden/> -->
+            <label for="app-note-status"><img
+                    src="https://cdn.iconscout.com/icon/free/png-512/free-apple-notes-icon-download-in-svg-png-gif-file-formats--logo-note-apps-pack-user-interface-icons-493153.png?f=webp&w=256"
+                    alt="Notes icon"></label>
+            <!-- <input type="radio" id="app-homework-status" name="contact" value="phone" hidden/> -->
+            <label for="app-homework-status"><img
+                    src="https://frutigeraeroarchive.org/images/icons/mobile/ios/reminders.png"
+                    alt="Tasks icon"></label>
+            <!-- <input type="radio" id="app-weather-status" name="contact" value="mail" hidden/> -->
+            <label for="app-weather-status"><img
+                    src="https://frutigeraeroarchive.org/images/icons/mobile/ios/weather.png"
+                    alt="weather icon"></label>
+        </div>
+    </footer>
 </body>
 
 </html>
