@@ -108,7 +108,7 @@ iframe {
 
 .icons label img:hover {
     transform: scale(0.9);
-    transition-duration: 0.5s;
+    transition-duration: 0.1s;
     border-radius: 20px;
     box-shadow: 0px 0px 20px 2px rgb(0 0 0 / 78%);
 }
